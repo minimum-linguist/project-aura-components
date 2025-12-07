@@ -1,0 +1,108 @@
+/* Project Aura Component Library - CSS Variables
+ * These variables match the existing frontend design system
+ * See ADR-0037 for CSS strategy details
+ */
+
+:root {
+  /* Colors - Primary */
+  --color-primary: #667eea;
+  --color-primary-hover: #5a6fd6;
+  --color-secondary: #764ba2;
+  --color-secondary-hover: #6a4392;
+
+  /* Colors - Semantic */
+  --color-success: #28a745;
+  --color-success-hover: #218838;
+  --color-warning: #ffc107;
+  --color-warning-hover: #e0a800;
+  --color-danger: #dc3545;
+  --color-danger-hover: #c82333;
+  --color-info: #17a2b8;
+  --color-info-hover: #138496;
+
+  /* Colors - Neutrals */
+  --color-text: #333;
+  --color-text-muted: #666;
+  --color-text-light: #999;
+  --color-border: #ddd;
+  --color-border-focus: #667eea;
+  --color-background: #fff;
+  --color-background-hover: #f8f9fa;
+  --color-background-muted: #f5f5f5;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2rem;     /* 32px */
+  --spacing-2xl: 3rem;    /* 48px */
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-md: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Z-Index Scale */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-modal: 1040;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1080;
+
+  /* Container Max Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+/* Component-specific customization variables
+ * These can be overridden by consumers to customize components
+ * Prefix: --pa- (project-aura)
+ */
+
+/* Button customization */
+/* --pa-button-bg: var(--color-primary); */
+/* --pa-button-color: white; */
+/* --pa-button-radius: var(--radius-sm); */
+
+/* Input customization */
+/* --pa-input-border-color: var(--color-border); */
+/* --pa-input-focus-border-color: var(--color-border-focus); */
+/* --pa-input-radius: var(--radius-sm); */
+
+/* Card customization */
+/* --pa-card-bg: var(--color-background); */
+/* --pa-card-border-color: var(--color-border); */
+/* --pa-card-radius: var(--radius-md); */
