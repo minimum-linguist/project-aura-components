@@ -16,7 +16,7 @@
     "test:coverage": "vitest run --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "lint": "eslint src --ext ts,tsx",
+    "lint": "eslint src",
     "format": "prettier --write src",
     "prepublishOnly": "npm run build"
   },
@@ -41,6 +41,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.0",
     "@storybook/addon-a11y": "^8.6.14",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
@@ -57,10 +58,12 @@
     "@vitest/coverage-v8": "^4.0.15",
     "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0",
     "jsdom": "^27.3.0",
     "prettier": "^3.7.4",
     "storybook": "^8.6.14",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.32.0",
     "vite": "^6.4.1",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.15"
