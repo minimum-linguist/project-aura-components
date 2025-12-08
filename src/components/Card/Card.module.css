@@ -1,0 +1,95 @@
+/* Card Component Styles */
+
+.card {
+  background-color: var(--color-background);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* Variants */
+.default {
+  border: 1px solid var(--color-border);
+}
+
+.outlined {
+  border: 2px solid var(--color-border);
+}
+
+.elevated {
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+
+/* Padding variants */
+.padding-none .content {
+  padding: 0;
+}
+
+.padding-sm .content {
+  padding: var(--spacing-sm);
+}
+
+.padding-md .content {
+  padding: var(--spacing-md);
+}
+
+.padding-lg .content {
+  padding: var(--spacing-lg);
+}
+
+/* Header */
+.header {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.padding-sm .header {
+  padding: var(--spacing-sm);
+}
+
+.padding-lg .header {
+  padding: var(--spacing-lg);
+}
+
+.padding-none .header {
+  padding: var(--spacing-md);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  line-height: var(--line-height-tight);
+}
+
+.subtitle {
+  margin: var(--spacing-xs) 0 0 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-normal);
+}
+
+/* Content */
+.content {
+  /* Padding is set by padding variant classes */
+}
+
+/* Footer */
+.footer {
+  padding: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-background-muted);
+}
+
+.padding-sm .footer {
+  padding: var(--spacing-sm);
+}
+
+.padding-lg .footer {
+  padding: var(--spacing-lg);
+}
+
+.padding-none .footer {
+  padding: var(--spacing-md);
+}

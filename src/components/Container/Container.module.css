@@ -1,0 +1,72 @@
+/* Container Component Styles */
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Centered */
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Max-width variants */
+.maxWidth-sm {
+  max-width: var(--container-sm);
+}
+
+.maxWidth-md {
+  max-width: var(--container-md);
+}
+
+.maxWidth-lg {
+  max-width: var(--container-lg);
+}
+
+.maxWidth-xl {
+  max-width: var(--container-xl);
+}
+
+.maxWidth-full {
+  max-width: 100%;
+}
+
+/* Padding variants */
+.padding-none {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.padding-sm {
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
+}
+
+.padding-md {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+.padding-lg {
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .padding-sm {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  .padding-md {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+  }
+
+  .padding-lg {
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
+  }
+}

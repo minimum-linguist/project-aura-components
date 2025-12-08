@@ -38,18 +38,12 @@ function App() {
 - `Container` - Responsive wrapper
 
 ### Data Display
-- `DataTable` - Sortable, expandable data table
-- `Pagination` - Page navigation controls
-- `Badge` - Status indicators
-- `StatusBadge` - HTTP status-specific badges
+- `Badge` - Status indicators (success, warning, danger, info)
+- `StatusBadge` - HTTP status-specific badges (2xx, 4xx, 5xx)
 
 ### Feedback
 - `Alert` - Message boxes (info, success, warning, error)
 - `Spinner` - Loading indicators
-
-### Search
-- `SearchBar` - Text search with debounce
-- `DateRangePicker` - Date range selection
 
 ## Development
 

@@ -1,0 +1,100 @@
+/* Alert Component Styles */
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+}
+
+/* Icon */
+.iconContainer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  display: block;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.message {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+}
+
+/* Close button */
+.closeButton {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.closeButton:hover {
+  opacity: 1;
+}
+
+.closeButton:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Variants */
+.info {
+  background-color: #e7f3ff;
+  border-color: #b3d9ff;
+  color: #0066cc;
+}
+
+.info .closeButton {
+  color: #0066cc;
+}
+
+.success {
+  background-color: #e6f7e6;
+  border-color: #b3e6b3;
+  color: #1a7a1a;
+}
+
+.success .closeButton {
+  color: #1a7a1a;
+}
+
+.warning {
+  background-color: #fff8e6;
+  border-color: #ffe6a3;
+  color: #8a6d00;
+}
+
+.warning .closeButton {
+  color: #8a6d00;
+}
+
+.error {
+  background-color: #fde8e8;
+  border-color: #f5c2c2;
+  color: #c53030;
+}
+
+.error .closeButton {
+  color: #c53030;
+}

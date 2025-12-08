@@ -1,0 +1,59 @@
+/* Badge Component Styles */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+/* Sizes */
+.sm {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+}
+
+.md {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.lg {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-md);
+}
+
+/* Variants */
+.default {
+  background-color: var(--color-background-muted);
+  color: var(--color-text);
+}
+
+.success {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.warning {
+  background-color: var(--color-warning);
+  color: var(--color-text);
+}
+
+.danger {
+  background-color: var(--color-danger);
+  color: white;
+}
+
+.info {
+  background-color: var(--color-info);
+  color: white;
+}
+
+/* Pill shape */
+.pill {
+  border-radius: var(--radius-full);
+}
