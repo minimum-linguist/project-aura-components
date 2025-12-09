@@ -121,7 +121,6 @@ describe('Card', () => {
         </Card>
       );
 
-      const { container } = render(<Card>x</Card>);
       expect(screen.getByText('Complete Card')).toBeInTheDocument();
       expect(screen.getByText('With all sections')).toBeInTheDocument();
       expect(screen.getByText('Main content')).toBeInTheDocument();
