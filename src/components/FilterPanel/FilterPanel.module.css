@@ -1,0 +1,96 @@
+/* FilterPanel Component Styles */
+
+.filterPanel {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.filterPanel.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+/* Filters Grid */
+.filtersGrid {
+  display: grid;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Column variants */
+.columnsAuto {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.columns1 {
+  grid-template-columns: 1fr;
+}
+
+.columns2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.columns3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.columns4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .columns2,
+  .columns3,
+  .columns4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .columns3,
+  .columns4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Filter Group */
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.filterLabel {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}

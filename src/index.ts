@@ -34,11 +34,11 @@ export type { BadgeProps } from './components/Badge';
 export { StatusBadge } from './components/StatusBadge';
 export type { StatusBadgeProps } from './components/StatusBadge';
 
-// export { DataTable } from './components/DataTable';
-// export type { DataTableProps, Column } from './components/DataTable';
+export { DataTable } from './components/DataTable';
+export type { DataTableProps, Column } from './components/DataTable';
 
-// export { Pagination } from './components/Pagination';
-// export type { PaginationProps } from './components/Pagination';
+export { Pagination } from './components/Pagination';
+export type { PaginationProps } from './components/Pagination';
 
 // Feedback Components (Step 3.4)
 export { Alert } from './components/Alert';
@@ -47,9 +47,12 @@ export type { AlertProps } from './components/Alert';
 export { Spinner } from './components/Spinner';
 export type { SpinnerProps } from './components/Spinner';
 
-// Search Components (to be implemented in Step 4.2)
-// export { SearchBar } from './components/SearchBar';
-// export type { SearchBarProps } from './components/SearchBar';
+// Search Components (Step 4.2)
+export { SearchBar } from './components/SearchBar';
+export type { SearchBarProps } from './components/SearchBar';
 
-// export { DateRangePicker } from './components/DateRangePicker';
-// export type { DateRangePickerProps } from './components/DateRangePicker';
+export { DateRangePicker, dateToISOString, isoStringToDate } from './components/DateRangePicker';
+export type { DateRangePickerProps } from './components/DateRangePicker';
+
+export { FilterPanel, FilterGroup, useFilterPanel } from './components/FilterPanel';
+export type { FilterPanelProps, FilterGroupProps } from './components/FilterPanel';
